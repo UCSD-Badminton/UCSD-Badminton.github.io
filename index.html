@@ -1,10 +1,33 @@
 
 <html>
-  <head>
-    <title>
-      2017 SCCBL Preseason Tournament @ UCSD
-    </title>
-  </head>
+	<head>
+		<title>
+      			2017 SCCBL Preseason Tournament @ UCSD
+    		</title>
+		<style>
+			h2 {
+				word-spacing: 30px;
+			}
+		</style>
+
+	<script type="text/javascript">
+		function iframeDidLoad() {
+			alert('Done');
+		}
+		
+		function change() {
+			document.getElementById('frame').src = 
+				'http://challonge.com/beforestarttest/module';
+		}
+
+		function change2() {
+			document.getElementById('frame').src = 
+				'http://challonge.com/afterstarttest/module';
+		}
+
+	</script>
+
+  	</head>	
   <body>
     <p>
       <center>
@@ -13,36 +36,27 @@
 	<h1> 2017 SCCBL Preseason Tournament </h1>
       </center>
     </p>
-    <h2> Men's Singles </h2>
     <center>
-	<iframe src="https://challonge.com/beforestarttest/module" width="95%" 
-	    height="500" frameborder="0" scrolling="auto" 
-	    allowtransparency="true"></iframe>
-    </center>
-    <h2> Women's Singles </h2>
-    <center>
-	<iframe src="https://challonge.com/afterstarttest/module" width="95%" 
-	    height="1250" frameborder="0" scrolling="auto" 
-	    allowtransparency="true"></iframe>
-    </center>
-    <h2> Men's Doubles </h2>
-    <center>
-	<iframe src="https://challonge.com/afterstarttest/module" width="95%" 
-	    height="1250" frameborder="0" scrolling="auto" 
-	    allowtransparency="true"></iframe>
-    </center>
-    <h2> Women's Doubles </h2>
-    <center>
-	<iframe src="https://challonge.com/afterstarttest/module" width="95%" 
-	    height="1250" frameborder="0" scrolling="auto" 
-	    allowtransparency="true"></iframe>
-    </center>
-    <h2> Mixed Doubles </h2>
-    <center>
-	<iframe src="https://challonge.com/afterstarttest/module" width="95%" 
-	    height="1250" frameborder="0" scrolling="auto" 
-	    allowtransparency="true"></iframe>
-    </center>
-    
+    <font size="6"> 
+	<input type="button" onclick="change()" value="Men's Singles"
+	    style="font-size : 40px;" /> &nbsp;
+	<input type="button" onclick="change2()" value="Women's Singles"
+	    style="font-size : 40px;" /> &nbsp;
+	<input type="button" onclick="change()" value="Men's Doubles"
+	    style="font-size : 40px;" /> &nbsp;
+	<input type="button" onclick="change2()" value="Women's Doubles"
+	    style="font-size : 40px;" /> &nbsp;
+	<input type="button" onclick="change()" value="Mixed Doubles"
+	    style="font-size : 40px;" /> &nbsp;
+	<input type="button" onclick="change()" value="Match Times"
+	    style="font-size : 40px;" /> &nbsp;
+	<br>
+	<iframe id="frame" src="https://challonge.com/" 
+	width="95%" height="1250" frameborder="0" scrolling="auto" 
+	allowtransparency="true"></iframe>
+    </font>
+	</center>
+    <input type="text" value="Before Start" onClick="change()" />
+    <input type="button" value="After Start" onClick="change()" />
   </body>
 </html>

@@ -23,9 +23,9 @@
 				'https://challonge.com/beforestarttest/module';
 		}
 
-		function change2() {
+		function mixedDoubles() {
 			document.getElementById('frame').src = 
-				'https://challonge.com/afterstarttest/module';
+				'https://challonge.com/2017_SCCBL_Preseason_XD/module';
 		}
 
 	</script>
@@ -40,19 +40,24 @@
       </center>
     </p>
     <center>
+	    <div class="row-lg-6">
     <font size="6"> 
-	<input type="button" onclick="change()" value="Men's Singles"
-	    style="font-size : 40px;" /> &nbsp;
-	<input type="button" onclick="change2()" value="Women's Singles"
-	    style="font-size : 40px;" /> &nbsp;
-	<input type="button" onclick="change()" value="Men's Doubles"
-	    style="font-size : 40px;" /> &nbsp;
-	<input type="button" onclick="change2()" value="Women's Doubles"
-	    style="font-size : 40px;" /> &nbsp;
-	<input type="button" onclick="change()" value="Mixed Doubles"
-	    style="font-size : 40px;" /> &nbsp;
-	<input type="button" onclick="change()" value="Match Times"
-	    style="font-size : 40px;" /> &nbsp;
+	<input type="button" class="btn btn-lg" onclick="change()" value="Men's Singles"
+	    style="font-size : 40px;" />
+	<input type="button" class="btn btn-lg" onclick="change2()" value="Women's Singles"
+	    style="font-size : 40px;" /> 
+	<input type="button" class="btn btn-lg" onclick="change()" value="Men's Doubles"
+	    style="font-size : 40px;" /> 
+	</div>
+	<br>
+	<div class = "row-lg-6">
+	<input type="button" class="btn btn-lg" onclick="change2()" value="Women's Doubles"
+	    style="font-size : 40px;" />
+	<input type="button" class="btn btn-lg" onclick="mixedDoubles()" value="Mixed Doubles"
+	    style="font-size : 40px;" /> 
+	<input type="button" class="btn btn-lg" onclick="change()" value="Match Times"
+	    style="font-size : 40px;" /> 
+	</div>
 	<br>
 	<iframe id="frame" src="https://challonge.com/afterstarttest/module" 
 	width="95%" height="1250" frameborder="0" scrolling="auto" 

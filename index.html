@@ -17,10 +17,25 @@
 		function iframeDidLoad() {
 			alert('Done');
 		}
-		
-		function change() {
+
+		function mensSingles() {
 			document.getElementById('frame').src = 
-				'https://challonge.com/beforestarttest/module';
+				'https://challonge.com/2017_SCCBL_Preseason_MS/module';
+		}
+
+		function womensDoubles() {
+			document.getElementById('frame').src = 
+				'https://challonge.com/2017_SCCBL_Preseason_WD/module';
+		}
+
+		function womensSingles() {
+			document.getElementById('frame').src = 
+				'https://challonge.com/2017_SCCBL_Preseason_WS/module';
+		}
+		
+		function mensDoubles() {
+			document.getElementById('frame').src = 
+				'https://challonge.com/2017_SCCBL_Preseason_MD/module';
 		}
 
 		function mixedDoubles() {
@@ -42,20 +57,20 @@
     <center>
 	    <div class="row-lg-6">
     <font size="6"> 
-	<input type="button" class="btn btn-lg" onclick="change()" value="Men's Singles"
+	<input type="button" class="btn btn-lg" onclick="mensSingles()" value="Men's Singles"
 	    style="font-size : 40px;" />
-	<input type="button" class="btn btn-lg" onclick="change2()" value="Women's Singles"
+	<input type="button" class="btn btn-lg" onclick="womensSingles()" value="Women's Singles"
 	    style="font-size : 40px;" /> 
-	<input type="button" class="btn btn-lg" onclick="change()" value="Men's Doubles"
+	<input type="button" class="btn btn-lg" onclick="mensDoubles()" value="Men's Doubles"
 	    style="font-size : 40px;" /> 
 	</div>
 	<br>
 	<div class = "row-lg-6">
-	<input type="button" class="btn btn-lg" onclick="change2()" value="Women's Doubles"
+	<input type="button" class="btn btn-lg" onclick="womensDoubles()" value="Women's Doubles"
 	    style="font-size : 40px;" />
 	<input type="button" class="btn btn-lg" onclick="mixedDoubles()" value="Mixed Doubles"
 	    style="font-size : 40px;" /> 
-	<input type="button" class="btn btn-lg" onclick="change()" value="Match Times"
+	<input type="button" class="btn btn-lg" onclick="matchTimes()" value="Match Times"
 	    style="font-size : 40px;" /> 
 	</div>
 	<br>
